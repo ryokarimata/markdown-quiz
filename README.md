@@ -4,7 +4,7 @@ Markdownの `quiz` コードブロックに書いた問題に、その場で回�
 
 ## インストール
 
-1. ZIPを展開します。
+1. [Releases](https://github.com/ryokarimata/markdown-quiz/releases/latest)から `markdown-quiz.zip` をダウンロードし、展開します。
 2. 利用するObsidian保管庫の `.obsidian/plugins/` 内へ `markdown-quiz` フォルダをコピーします。`plugins` がなければ作成してください。
 3. 以下の配置になっていることを確認します（同名フォルダを二重にしないでください）。
 
@@ -77,7 +77,21 @@ explanation: |
 
 ## 開発と確認
 
-`main.js` がそのまま配布用ソースです。Obsidian標準APIのみを使い、外部通信やノートへの書き込みは行いません（テンプレート挿入コマンドを実行した場合のみ編集中のノートへ挿入します）。デスクトップ・モバイル共通のAPIを使用しています。
+`main.js` がそのまま配布用ソースです。Obsidian標準APIのみを使います。テンプレート挿入コマンドを実行した場合のみ、編集中のノートへひな形を挿入します。デスクトップ・モバイル共通のAPIを使用しています。
+
+## プライバシー
+
+アカウント登録・課金・利用状況の収集はありません。プラグイン独自の外部通信は行わず、回答履歴も保存しません。解説はObsidianのMarkdown描画機能を使用するため、利用者が解説に外部画像などを記述した場合は、その表示に伴う通信が発生することがあります。
+
+## ライセンス
+
+[MIT License](LICENSE)。作者：port22。Obsidian公式の製品ではありません。
+
+## 不具合の報告
+
+[Issues](https://github.com/ryokarimata/markdown-quiz/issues)へ、Obsidianのバージョン、OS、再現手順、個人情報を除いた問題ブロックの例を記載してください。
+
+## API資料・テスト
 
 公式API資料：
 - https://github.com/obsidianmd/obsidian-developer-docs/blob/main/en/Plugins/Editor/Markdown%20post%20processing.md
