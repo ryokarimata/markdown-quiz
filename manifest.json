@@ -1,0 +1,9 @@
+{
+  "id": "markdown-quiz",
+  "name": "Markdown Quiz",
+  "version": "1.0.0",
+  "minAppVersion": "1.4.0",
+  "description": "Markdownのquizブロックで4択問題に回答し、即時採点と解説を表示します。",
+  "author": "port22",
+  "isDesktopOnly": false
+}
