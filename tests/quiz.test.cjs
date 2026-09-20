@@ -7,7 +7,7 @@ const { JSDOM } = require('jsdom');
 const YAML = require('yaml');
 
 const source = fs.readFileSync(path.join(__dirname, '..', 'main.js'), 'utf8');
-const sample = fs.readFileSync(path.join(__dirname, '..', 'サンプル問題.md'), 'utf8');
+const sample = fs.readFileSync(path.join(__dirname, '..', 'サンプル問題.md'), 'utf8').replace(/\r\n/g, '\n');
 const blocks = [...sample.matchAll(/```quiz\n([\s\S]*?)```/g)].map(match => match[1]);
 
 function harness(render) {
